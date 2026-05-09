@@ -1,0 +1,12 @@
+diff --git a/node_modules/monaco-themes/package.json b/node_modules/monaco-themes/package.json
+index 76054d7..e06c3c0 100644
+--- a/node_modules/monaco-themes/package.json
++++ b/node_modules/monaco-themes/package.json
+@@ -12,6 +12,7 @@
+       "import": "./dist/index.js",
+       "require": "./dist/index.cjs"
+     },
++    "./themes/*": "./themes/*",
+     "./dist/monaco-themes.js": "./dist/monaco-themes.js"
+   },
+   "scripts": {

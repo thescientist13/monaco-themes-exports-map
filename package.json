@@ -1,0 +1,20 @@
+{
+  "name": "monaco-themes-exports-map",
+  "version": "1.0.0",
+  "description": "A demonstration repo for Monaco Themes with themes in the exports map",
+  "author": "Owen Buckley <owen@thegreenhouse.io>",
+  "type": "module",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thescientist13/monaco-themes-exports-map.git"
+  },
+  "scripts": {
+    "demo": "node .",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "monaco-themes": "^0.4.8",
+    "patch-package": "^8.0.1"
+  }
+}
