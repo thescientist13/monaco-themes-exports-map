@@ -23,9 +23,53 @@ After running `npm ci`, patch-package should run, which applies a patch to monac
     "import": "./dist/index.js",
     "require": "./dist/index.cjs"
   },
-  "./themes/*": "./themes/*", # add this line
+  "./themes/*": "./themes/*", # added this line
   "./dist/monaco-themes.js": "./dist/monaco-themes.js"
 },
 ```
 
-Run `npm run demo` to see it in action.
+Run `npm run demo` to see the output of _index.js_:
+
+```sh
+➜  monaco-themes-exports-map git:(master) npm run demo                 
+
+> monaco-themes-exports-map@1.0.0 demo
+> node .
+
+{
+  theme: {
+    base: 'vs-dark',
+    inherit: true,
+    rules: [
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      ... 62 more items
+    ],
+    colors: {
+      'editor.foreground': '#d6deeb',
+      'editor.background': '#011627',
+      'editor.selectionBackground': '#5f7e9779',
+      'editor.lineHighlightBackground': '#010E17',
+      'editorCursor.foreground': '#80a4c2',
+      'editorWhitespace.foreground': '#2e2040',
+      'editorIndentGuide.background': '#5e81ce52',
+      'editor.selectionHighlightBorder': '#122d42'
+    }
+  }
+}
+```
