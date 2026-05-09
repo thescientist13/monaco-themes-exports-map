@@ -1,6 +1,6 @@
 # monaco-themes-exports-map
 
-A demonstration repo for Monaco Themes with themes in the exports map.  This would support being able to import theme JSON files directly using ESM.
+A demonstration repo for [exporting Monaco Theme'ss theme files via exports maps](https://github.com/brijeshb42/monaco-themes/issues/65).  This would support being able to import theme JSON files directly using ESM.
 
 ```js
 import theme from 'monaco-themes/themes/Night Owl.json' with { type: 'json'};
